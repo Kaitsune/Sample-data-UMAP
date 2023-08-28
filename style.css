@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
+
+html,body{
+    height: 100%;
+}
+body{
+    background-image: url(./images/background.png);
+}
+
+#main-nav #bulb, #bulb1{
+    animation-name: rgb;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+.content{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+}
+.content p, li{
+    font-size: 18px;
+    font-family: 'Glory';
+    padding: 3px;
+}
+.content h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.content a{
+    text-decoration: underline;
+}
+#coll-farm{
+    background-color: rgba(93, 153, 118, 0.486);
+}
+#coll-ind{
+    background-color: rgba(20, 20, 20, 0.733);
+    color: rgb(214, 214, 214);
+}
+.bg-ind{
+    margin: auto;
+    padding: 0%;
+}
+.bg-ind img{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0%;
+    filter:opacity(30%)
+}
+#coll-tbl{
+    background-color: rgba(196, 150, 65, 0.678);
+}
+
+#desc, #desc2, #desc3, #desc4, #desc5{
+    padding-top: 3px;
+    display: none;
+}
+
+.data-tbl{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(190, 150, 76, 0.678);
+}
+.data-tbl table, table th, table td{
+    border: black solid 1px;
+}
+.data-tbl table th, td{
+    text-align: center;
+}
+.data-tbl td{
+    font-size: larger;
+}
+.link :hover{
+    color: red;
+    background-color: green;
+}
+.link :active{
+    color: blue;
+}
+.mod-dia{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+@keyframes rgb{
+     0% {background-color: black;}
+     1% {background-color: #ffffff;}
+     2% {background-color: black;}
+    3% {background-color: #ffffff;}
+    4%{background-color: black;}
+     12% {background-color: black;}
+    13% {background-color: #ffffff;}
+    14%{background-color: black;}
+    20%{background-color: black;}
+    21% {background-color: #ffffff;}
+    22% {background-color: black;}
+    50%{background-color: black;}
+
+
+    100% {background-color: #ffffff;}
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="main-nav">
+        <nav class="pushpin" data-target="main-nav">
+            <div class="nav-wrapper grey darken-4 z-depth-5">
+                <div class="container">
+                    <a class="brand-logo center"><img src="./images/logo.png"
+                            style="width: 25px; padding-top: 15px;"></a>
+                    <a class="logo hide-on-med-and-down"
+                        style="padding-left: 53%; margin: auto; font-family: 'Glory'; font-weight: bolder;">IIOT</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li onclick="clickOpen()"><a href="#smart-farm">Smart Farming</a></li>
+                        <li onclick="clickOpen2()"><a href="#smart-ind">Smart Industrial</a></li>
+                        <li onclick="clickOpen3()"><a href="#data-tab">CO2 PPM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav grey lighten-1" id="slide-out">
+            <li><a class="sidenav-close" href="#smart-farm" onclick="clickOpen()">Smart Farming</a></li>
+            <li><a class="sidenav-close" href="#smart-ind" onclick="clickOpen2()">Smart Industrial</a></li>
+            <li><a class="sidenav-close" href="#data-tab" onclick="clickOpen3()">CO2 PPM</a></li>
+        </ul>
+
+        <div class="container">
+            <img id="bulb" class="responsive-img z-depth-2 hoverable" src="./images/light.png">
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <ul class="collapsible popout z-depth-5">
+            <li id="smart-farm-li">
+                <div id="smart-farm" class="collapsible-header z-depth-1 teal darken-1 hoverable"><i
+                        class="material-icons">local_florist</i>Smart Farming
+                </div>
+                <div id="coll-farm" class="collapsible-body">
+                    <div class="content row">
+                        <div class="col s10 l8 offset-l2 offset-s1">
+                            <h1 class="center">Smart Farming</h1>
+                            <p style = "font-size: 100%;">Smart farming is a new idea that refers to farm management that applies the contemporary
+                                information and communication technologies to raise the number and quality of crops
+                                while
+                                minimizing the amount of human work necessary.</p>
+
+                            <ul>
+                                <div class="row">
+                                    <div class="col l1 offset-l1 offset-s1 offset-m5">
+                                        <a class="btn-floating btn-small waves-effect waves-light amber accent-3 pulse center"
+                                            onclick="toggleFunction()">
+                                            <i class="material-icons">brightness_4</i>
+                                        </a>
+                                    </div>
+
+                                    <div class="col s8 l10 m11 offset-m1">
+                                        <li id="desc">
+                                            Sensors: soil, water, light intensity, CO2 Concentration, humidity,
+                                            temperature,
+                                            dust.
+                                        </li>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l1 offset-l1 offset-s1 offset-m5">
+                                        <a class="btn-floating btn-small waves-effect waves-light grey darken-1 pulse center"
+                                            onclick="toggleFunction2()">
+                                            <i class="material-icons">laptop</i>
+                                        </a>
+                                    </div>
+                                    <div class="col l10 s8 m9 offset-m1">
+                                        <li id="desc2">
+                                            Software: new technology software applied
+                                            for IoT Platform.
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l1 offset-l1 offset-s1 offset-m5">
+                                        <a class="btn-floating btn-small waves-effect waves-light light-blue darken-3 pulse center"
+                                            onclick="toggleFunction3()">
+                                            <i class="material-icons">wifi</i>
+                                        </a>
+                                    </div>
+                                    <div class="col l10 s8 offset-m1">
+                                        <li id="desc3">
+                                            Connection: Wi-Fi,<a href="https://www.iotforall.com/what-is-cellular-iot/">
+                                                cellular</a> (4G/5G),<a
+                                                href="https://www.iotforall.com/what-is-lpwan-lorawan/">
+                                                LoRa</a>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l1 offset-l1 offset-s1 offset-m5">
+                                        <a class="btn-floating btn-small waves-effect waves-light red pulse center"
+                                            onclick="toggleFunction4()">
+                                            <i class="material-icons">location_on</i>
+                                        </a>
+                                    </div>
+                                    <div class="col s8 l10 offset-m1">
+                                        <li id="desc4">
+                                            </a>Location: GPS, Satellite, ect.
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l1 offset-l1 offset-s1 offset-m5">
+                                        <a class="btn-floating btn-small waves-effect waves-light blue-grey lighten-1 pulse center"
+                                            onclick="toggleFunction5()">
+                                            <i class="material-icons">format_list_numbered</i>
+                                        </a>
+                                    </div>
+                                    <div class="col s8 l10 offset-m1">
+                                        <li id="desc5">
+                                            Data Record and Analytic:on-Cloud, Local, AI features
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="smart-ind-li">
+                <div id="smart-ind" class="collapsible-header z-depth-1 grey darken-1 hoverable">
+                    <i class="material-icons">business</i>
+                    Smart Industrial
+                </div>
+                <div id="coll-ind" class="collapsible-body ">
+                    <div class="content row">
+                        <div class="col s10 l8 offset-l2 offset-s1">
+                            <h1 class="center">Smart Industrial</h1>
+                            <p style="font-size: 120%;">The Industrial Internet of Things (IIoT), which serves as the foundation for Industry 4.0
+                                and
+                                Smart Factory, connects smart factories, machines, industrial infrastructure, management
+                                systems, and other devices in order to streamline business operations and create
+                                intelligent,
+                                self-optimizing industrial equipment and facilities. Innovative IoT solutions can handle
+                                a
+                                variety of difficulties linked to the management of equipment and resources, as well as
+                                the
+                                security and safety of people.</p>
+
+                        </div>
+                    </div>
+                    <div class="bg-ind">
+                        <img src="./images/city.png">
+                    </div>
+                </div>
+
+            </li>
+            <li id="co2-ppm-li">
+                <div id="data-tab" class="collapsible-header z-depth-1 orange darken-1 hoverable">
+                    <i class="material-icons">cloud</i>
+                    CO2 PPM
+                </div>
+                <div id="coll-tbl" class="collapsible-body">
+                    <div class="section">
+                        <div class="data-tbl">
+                            <div class="col s9">
+                                <table class="highlight">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Average</th>
+                                        </tr>
+                                        <tr>
+                                    </thead>
+                                    <tbody>
+                                        <td>9 JAN 2016</td>
+                                        <td>401.05</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10 JAN 2016</td>
+                                            <td>401.59</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11 JAN 2016</td>
+                                            <td>403.55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12 JAN 2016</td>
+                                            <td>404.45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 JAN 2017</td>
+                                            <td>406.17</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2 JAN 2017</td>
+                                            <td>406.46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 JAN 2017</td>
+                                            <td>407.22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4 JAN 2017</td>
+                                            <td>409.04</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 JAN 2017</td>
+                                            <td>409.69</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6 JAN 2017</td>
+                                            <td>408.88</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7 JAN 2017</td>
+                                            <td>407.12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8 JAN 2017</td>
+                                            <td>405.13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9 JAN 2017</td>
+                                            <td>403.37</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10 JAN 2017</td>
+                                            <td>403.63</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11 JAN 2017</td>
+                                            <td>405.12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12 JAN 2017</td>
+                                            <td>406.81</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 JAN 2018</td>
+                                            <td>407.96</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2 JAN 2018</td>
+                                            <td>408.32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 JAN 2018</td>
+                                            <td>409.41</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4 JAN 2018</td>
+                                            <td>410.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 JAN 2018</td>
+                                            <td>411.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6 JAN 2018</td>
+                                            <td>410.79</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7 JAN 2018</td>
+                                            <td>408.71</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8 JAN 2018</td>
+                                            <td>406.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9 JAN 2018</td>
+                                            <td>405.51</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="link center">
+                            <a href="https://datahub.io/core/co2-ppm">https://datahub.io/core/co2-ppm</a>
+                        </div>
+
+                        <div class="section">
+
+                            <div>
+                                <div class="mod-dia">
+                                    <button data-target="modal1" class="btn modal-trigger amber darken-2">Read
+                                        More</button>
+
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <h4>Read More</h4>
+                                            <p>CO2 PPM - Trends in Atmospheric Carbon Dioxide. Data are sourced from the
+                                                US Government’s Earth System Research Laboratory, Global Monitoring
+                                                Division. Two main series are provided: the Mauna Loa series (which has
+                                                the longest continuous series since 1958) and a Global Average series (a
+                                                global average over marine surface sites).
+                                                <br><br> If you want to learn more. Visit this link:
+                                            <div class="link">
+                                                <a
+                                                    href="https://datahub.io/core/co2-ppm">https://datahub.io/core/co2-ppm</a>
+                                            </div>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+            var elems = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(elems);
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+            var elems = document.querySelectorAll('.tap-target');
+            var instances = M.TapTarget.init(elems);
+        });
+
+        function clickOpen() {
+            var smartli = document.getElementById("smart-farm-li");
+            var cf = document.getElementById("coll-farm");
+            smartli.className = " active";
+            cf.style = "display: block";
+            document.getElementById("smart-ind-li").classList.remove('active');
+            document.getElementById("coll-ind").style = "display: none";
+            document.getElementById("co2-ppm-li").classList.remove('active');
+            document.getElementById("coll-tbl").style = "display: none";
+        }
+
+        function clickOpen2() {
+            var smartind = document.getElementById("smart-ind-li");
+            var ci = document.getElementById("coll-ind");
+            smartind.className = " active";
+            ci.style = "display: block";
+            document.getElementById("smart-farm-li").classList.remove('active');
+            document.getElementById("coll-farm").style = "display: none";
+            document.getElementById("co2-ppm-li").classList.remove('active');
+            document.getElementById("coll-tbl").style = "display: none";
+        }
+
+        function clickOpen3() {
+            var smartli = document.getElementById("co2-ppm-li");
+            var cf = document.getElementById("coll-tbl");
+            smartli.className = " active";
+            cf.style = "display: block";
+            document.getElementById("smart-farm-li").classList.remove('active');
+            document.getElementById("coll-farm").style = "display: none";
+            document.getElementById("smart-ind-li").classList.remove('active');
+            document.getElementById("coll-ind").style = "display: none";
+        }
+
+        function toggleFunction() {
+            var x = document.getElementById("desc");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function toggleFunction2() {
+            var x = document.getElementById("desc2");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function toggleFunction3() {
+            var x = document.getElementById("desc3");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function toggleFunction4() {
+            var x = document.getElementById("desc4");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function toggleFunction5() {
+            var x = document.getElementById("desc5");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
